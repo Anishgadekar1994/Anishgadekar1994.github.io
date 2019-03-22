@@ -5,7 +5,7 @@
 	height: 100vh;
 }
 .image-background{
-	background-image: url(../images/cover.jpg);
+	background-image: url(../images/disdasha-model.jpg);
 	background-position: center; 
 	background-repeat: no-repeat; 
 	background-size: cover;
@@ -78,7 +78,9 @@
 .coming-soon-conatiner{
 	margin-top: 200px;
 }
-
+.coming-soon-conatiner h1{
+	font-size: 3.5rem;
+}
 .coming-soon-text{
 	font-family: 'Charm', cursive;
 }
