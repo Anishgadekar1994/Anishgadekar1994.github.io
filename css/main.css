@@ -79,10 +79,10 @@
 
 @media only screen and (max-width: 840px) {
 	.email-input-area{ 
-		width: 330px;
+		width: 100%;
 	}
 	.email-form-container{
-		width: 330px;
+		width: 100%;
 	}
 	.hidden-mobile{
 		display: none;
