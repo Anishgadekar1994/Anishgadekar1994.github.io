@@ -79,10 +79,10 @@
 
 @media only screen and (max-width: 840px) {
 	.email-input-area{ 
-		width: 350px;
+		width: 330px;
 	}
 	.email-form-container{
-		width: 350px;
+		width: 330px;
 	}
 	.hidden-mobile{
 		display: none;
@@ -94,7 +94,7 @@
 		margin-top: 100px;
 	}
 	.email-input-area .submit-btn{ 
-		width: 100px; 
+		width: 90px; 
 		
 	}
 }
