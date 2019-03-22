@@ -10,18 +10,36 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
-<body>
-	<div class="container-fluid text-center main-container" >
-		<h1 class="coming-soon" id="coming-soon"> Coming Soon... </h1>
-		<img src="images/logo.png" id="razza-logo">
+<body class="body">
+	<div class="container-fluid">
+		<div class="row height">
+			<div class="col-md-6 mt-5" >
+				<div class="inner-container">
+					<img src="images/logo.png" class="logo-image">
+					<div class="coming-soon-conatiner">
+						<h1 class="coming-soon-text">Coming Soon</h1>
+						<p>Style your disdasha</p>
 
-		<h1 class="mt-4" id="extra-text" >Style your disdasha</h1>
-
-		<h2 class="mt-4 " id="contact-info">
-			<i class="fas fa-mobile-alt"> <a href="tel:+9011901190" class="contact"> 9011 9011 90</a></i> / 
-			<i class="far fa-envelope"> Razza@gmail.com</i>
-		</h2>
+						<div class="email-input-area">
+							<form method="post">
+								<input class="email-input" name="email" type="text" placeholder="Enter your email"/>
+								<button class="submit-btn" name="submit" type="submit"><b>NOTIFY US</b></button>
+							</form>
+						</div>
+						<p class="text-after-notify">Sign up now to get early notification of our lauch date!</p>
+					</div>
+				</div>
+				
+			</div>
+			<div class="col-md-6 hidden-mobile image-background" >
+				
+			</div>
+			
+		</div>
+		
 	</div>
 
 </body>
