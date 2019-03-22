@@ -14,13 +14,6 @@
 .logo-image{
 	height: 50px;
 }
-.email-input-area{
-	width: 100%;
-}
-
-.email-input-area .submit-btn:hover{ 
-	background: #e40b52;
-}
 
 .email-input-area{ 
 	margin: 40px 0 20px;
@@ -28,7 +21,9 @@
 	width: 400px;
 	height: 47px; 
 }
-
+.email-form-container{
+	width: 400px;
+}
 .email-input-area .email-input{ 
 	width: 100%; 
 	position: absolute; 
@@ -59,12 +54,12 @@
 	font-size: .9em;
 	border-radius: 0 40px 40px 0; 
 	transition: all .3s; 
-	background: #F84982; 
+	background:#e1c79b; 
 	color: #fff; 
 	border:none;
 }
 .email-input-area .submit-btn:hover{ 
-	background: #e40b52; 
+	background: #e1c79b;
 }
 
 .text-after-notify{ 
@@ -81,13 +76,13 @@
 .coming-soon-conatiner h1{
 	font-size: 3.5rem;
 }
-.coming-soon-text{
-	font-family: 'Charm', cursive;
-}
 
 @media only screen and (max-width: 840px) {
 	.email-input-area{ 
-		width: 360px;
+		width: 370px;
+	}
+	.email-form-container{
+		width: 370px;
 	}
 	.hidden-mobile{
 		display: none;
