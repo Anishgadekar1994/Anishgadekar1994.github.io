@@ -14,59 +14,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-// 	  var $form = $('form#test-form'),
-//     	url = 'https://script.google.com/macros/s/AKfycbzEBUcWZXjdBZdOeTvMSiMuJQcnEt_I8oGOr_CBliblTOGt-F4/exec'
-// console.log("2");
-// 		$('#submit-form').on('click', function(e) {
-// 			console.log("yes");
-// 		  e.preventDefault();
-// 		  var jqxhr = $.ajax({
-// 		    url: url,
-// 		    method: "GET",
-// 		    dataType: "json",
-// 		    data: $form.serializeObject()
-// 		  }).success(
-// 		    // do something
-// 		  );
-// 		})
-
-$(document).ready(function() {
-	var formUrl= "https://script.google.com/macros/s/AKfycbzEBUcWZXjdBZdOeTvMSiMuJQcnEt_I8oGOr_CBliblTOGt-F4/exec";
-      $('form').submit(function(evt){
-      	console.log("inside form");
-      	var $this = $(this);
-		
-		var email = $('#email').val();
-		var formdata = $this.serialize();
-		console.log(formdata);
-		console.log(email);
-
-		if ( !email == '') {
-			var url = formUrl + "?callback=ctrlq&email=" + email +"&action=insert";
-			$.ajax({
-				crossDomain: true,
-				type: 'GET',
-				data: formdata,
-				url: url,
-				success: function(data) {
-					console.log("data saved");
-                },
-				error: function(data) {
-					console.log(data);
-					alert('Sorry, something went wrong! Please try again ');
-				}
-			});
-		}
-
-        evt.preventDefault();
-      });
- });
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script src='google-sheet.js'></script>
 
 
-
-	</script>
 </head>
 <body class="body">
 	<div class="container-fluid">
@@ -80,7 +32,7 @@ $(document).ready(function() {
 							<p>Order custom made Disdashas for every occasion from the comforts of your home. Convenience, style, and fast delivery coming to you very soon.</p>
 						
 							<div class="email-input-area">
-								<form id="test-form" name="contact">
+								<form id='google-form'>
 									<input class="email-input" name="email" id="email" type="email" placeholder="Enter your email" required />
 									<button class="submit-btn" name="submit" type="submit" id="submit-form" ><b>NOTIFY US</b></button>
 								</form>
