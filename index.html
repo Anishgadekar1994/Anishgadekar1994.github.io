@@ -37,7 +37,7 @@ $(document).ready(function() {
       $('form').submit(function(evt){
       	console.log("inside form");
       	var $this = $(this);
-	
+		
 		var email = $('#email').val();
 		var formdata = $this.serialize();
 		console.log(formdata);
@@ -46,6 +46,7 @@ $(document).ready(function() {
 		if ( !email == '') {
 			var url = formUrl + "?callback=ctrlq&email=" + email +"&action=insert";
 			$.ajax({
+				crossDomain: true,
 				type: 'GET',
 				data: formdata,
 				url: url,
