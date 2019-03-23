@@ -32,11 +32,11 @@ $(document).ready(function(){
         // Callback handler that will be called on success
         request.done(function (response, textStatus, jqXHR){
             // Log a message to the console
-            console.log("Hooray, it worked!");
              document.getElementById("email").value = "";
-            console.log(response);
-            console.log(textStatus);
-            console.log(jqXHR);
+             $("#email-input-area").addClass("hide");
+             $("#success-message").removeClass("hide");
+             console.log("data saved");
+ 
         });
 
         // Callback handler that will be called on failure
